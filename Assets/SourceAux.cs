@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(Emission))]
+[RequireComponent(typeof(MirrorScript))]
 
 public class SourceAux : Source {
 
@@ -11,11 +11,12 @@ public class SourceAux : Source {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		Emission em = this.GetComponent <Emission> ();
+	new void Update () {
+		MirrorScript em = this.GetComponent <MirrorScript> ();
 		if (em.getIsLit ()) {
 			base.lightDir = em.getLightDir();
 			base.lightPos = em.getLightPos();
+			base.CreateLight();
 		}
 		base.Update();
 	}

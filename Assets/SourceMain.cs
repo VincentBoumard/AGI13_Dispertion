@@ -5,12 +5,14 @@ public class SourceMain : Source {
 
 	// Use this for initialization
 	void Start () {
-		base.lightDir = this.transform.forward;
-		base.lightPos = this.transform.position;
+		base.lightDir = transform.forward;
+		base.lightPos = transform.position;
+		base.Update ();
+		base.CreateLight ();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	new void Update () {
 		base.Update ();
 	}
 }
