@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{8132F959-721F-BC11-E43D-8FA33EBDA36C}</ProjectGuid>
+	<ProjectGuid>{3DB1E0AD-ACB6-A6C9-BB67-E64E7214B402}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -47,11 +47,17 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CreatePlane.cs" />
+     <Compile Include="Assets\Emission.cs" />
      <Compile Include="Assets\LightBeamScript.cs" />
      <Compile Include="Assets\MirrorScript.cs" />
+     <Compile Include="Assets\ShadowScript.cs" />
      <Compile Include="Assets\Source.cs" />
      <Compile Include="Assets\SourceAux.cs" />
      <Compile Include="Assets\SourceMain.cs" />
+     <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+     <None Include="Assets\LightProjectorShader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

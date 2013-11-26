@@ -51,6 +51,7 @@ public class Source : MonoBehaviour {
 			// set the other parameters right according to the raycast info
 			lightb.transform.localScale = new Vector3(0.5f, 1.0f, dist);
 			lightb.transform.position = lightPos;
+			lightb.GetComponent<LightBeamScript>().dist = dist;
 		}
 	}
 
@@ -64,6 +65,7 @@ public class Source : MonoBehaviour {
 			lightb.transform.localScale = new Vector3(0.5f, 1.0f, dist);
 			Quaternion rotation = Quaternion.AngleAxis(Vector3.Angle(Vector3.forward, lightDir), transform.up);
 			lightb.transform.rotation = rotation;
+			lightb.GetComponent<LightBeamScript>().forward = lightDir;
 		}
 	}
 

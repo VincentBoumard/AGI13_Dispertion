@@ -13,7 +13,7 @@ GameObject:
   - 23: {fileID: 2300000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,6 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84036cd3314606a4c91cd950c391e3c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLit: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a8cb049e54a5c47aeb41066fa28547, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCreated: 0
   lightBeam: {fileID: 100000, guid: 15e21e8912e3bc44fa24fe812db95fcb, type: 2}
 --- !u!1001 &100100000
 Prefab:
