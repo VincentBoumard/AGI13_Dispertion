@@ -13,7 +13,9 @@ public class SourceAux : Source {
 	// Update is called once per frame
 	new void Update () {
 		MirrorScript em = this.GetComponent <MirrorScript> ();
-		if (em.getIsLit ()) {
+
+        if (em.getIsLit())
+        {
 			base.lightDir = em.getLightDir();
 			base.lightPos = em.getLightPos();
 			base.CreateLight();

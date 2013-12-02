@@ -95,7 +95,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCreated: 0
+  isCreatedD: 0
   lightBeam: {fileID: 100000, guid: 15e21e8912e3bc44fa24fe812db95fcb, type: 2}
+  dispersedLightBeams:
+  - {fileID: 100000, guid: 8e81ce7c265b826488f25b3ae9527c8c, type: 2}
+  - {fileID: 100000, guid: 108dcf9e70fa8ff4189da14f461765b1, type: 2}
+  - {fileID: 100000, guid: fab48dc603e12314f85a45a9d4a46317, type: 2}
+  - {fileID: 100000, guid: 91a4036007e6e224b936d2188df81eb4, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

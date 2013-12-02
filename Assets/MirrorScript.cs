@@ -23,7 +23,7 @@ public class MirrorScript : MonoBehaviour {
 				src.DestroyLight();
 		}
 		// test function to rotate the mirrors in-game
-		if (Input.GetKeyDown ("a"))
+		if (Input.GetKeyDown ("v"))
 						transform.Rotate (0.0f, 5.0f, 0.0f);
 	}
 
@@ -47,6 +47,7 @@ public class MirrorScript : MonoBehaviour {
 		isLit = true;
 		surfaceNormal = normal;
 		lightPos = coord;
+        Debug.Log("LightPos of reflection" + lightPos);
 		float angle = Vector3.Angle (lightRay, surfaceNormal);
 		// Vector3.Angle gives an absolute value, so we have to check if the reflected ray should be
 		// reflected to the right or to the left
