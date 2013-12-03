@@ -30,16 +30,16 @@ public class SourceAuxG : Source
                 base.lightDirD[i] = ldir[i];
             }
             base.lightPos = em.getLightPos();
+
             base.lightType = 2;
             base.CreateDispersedLight();
-            
-
         }
 
         else if (em.getIsLitOne())
         {
             base.lightDir = em.getLightDirOne();
             base.lightPos = em.getLightPos();
+
             base.lightType = em.getLightType();
             base.CreateLight();
         }

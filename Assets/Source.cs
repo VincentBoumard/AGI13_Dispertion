@@ -41,6 +41,7 @@ public class Source : MonoBehaviour {
                 hitIndex = 1;
                 MirrorScript ms = hit.transform.gameObject.GetComponent<MirrorScript>();
                 ms.Reflect(hit.point, hit.normal, lightDir, lightType);
+
                 // distance to the object hit to properly create the light beam
                 dist = hit.distance;
             }

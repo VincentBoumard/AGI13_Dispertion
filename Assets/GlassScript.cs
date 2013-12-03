@@ -80,7 +80,7 @@ public class GlassScript : MonoBehaviour
     {
         return lightType;
     }
-    
+
     void lightsOff()
     {
         isLit = false;
@@ -103,10 +103,10 @@ public class GlassScript : MonoBehaviour
         }
     }
 
-    public void DispersOne(Vector3 coord, Vector3 normal, Vector3 lightRay, int type)
+    public void DispersOne(Vector3 coord, Vector3 normal, Vector3 lightRay, int t)
     {
         isLitOne = true;
-        lightType = type;
+        lightType = t;
         surfaceNormal = normal;
         lightPos = coord;
         Debug.Log("LightPos of dispersion" + lightPos);
