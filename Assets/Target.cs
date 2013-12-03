@@ -10,6 +10,7 @@ public class Target : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
         particleSystem.Pause();
         //particleSystem.Clear();
     }
@@ -27,6 +28,7 @@ public class Target : MonoBehaviour
             particleSystem.Pause();
             particleSystem.Clear();
         }
+
         // test function to rotate the mirrors in-game
         if (Input.GetKeyDown("d"))
             transform.Translate(0.5f, 0.0f, 0.0f);

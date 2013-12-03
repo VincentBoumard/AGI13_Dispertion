@@ -80,7 +80,7 @@ public class GlassScript : MonoBehaviour
     {
         return lightType;
     }
-    
+
     void lightsOff()
     {
         isLit = false;

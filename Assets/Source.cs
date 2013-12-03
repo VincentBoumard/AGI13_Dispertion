@@ -139,7 +139,6 @@ public class Source : MonoBehaviour {
                         if (i == ms.getColour())
                         {
                             ms.Hit();
-                            //ms.GetComponent<ParticleSystem>().Play();
                         }
                         // distance to the object hit to properly create the light beam
                         distD[i] = hit.distance;
