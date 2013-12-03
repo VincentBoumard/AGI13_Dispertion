@@ -8,7 +8,10 @@ public class GlassScript : MonoBehaviour
     public bool isLitOne = false;
     private Vector3[] lightDirD = new Vector3[4];//(1.0f, 0.0f, 0.0f);
     private Vector3 lightDir = new Vector3(1.0f, 0.0f, 0.0f);
+<<<<<<< HEAD
     private int lightType = 5;
+=======
+>>>>>>> 36069d0017f220a8dee531f79ddacba90146ce89
     private Vector3 lightPos = new Vector3(0.0f, 0.0f, 0.0f);
     private Vector3 surfaceNormal = new Vector3(0.0f, 0.0f, 0.0f);
 
@@ -76,11 +79,14 @@ public class GlassScript : MonoBehaviour
         return lightPos;
     }
 
+<<<<<<< HEAD
     public int getLightType()
     {
         return lightType;
     }
     
+=======
+>>>>>>> 36069d0017f220a8dee531f79ddacba90146ce89
     void lightsOff()
     {
         isLit = false;
@@ -103,10 +109,16 @@ public class GlassScript : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
     public void DispersOne(Vector3 coord, Vector3 normal, Vector3 lightRay, int type)
     {
         isLitOne = true;
         lightType = type;
+=======
+    public void DispersOne(Vector3 coord, Vector3 normal, Vector3 lightRay)
+    {
+        isLitOne = true;
+>>>>>>> 36069d0017f220a8dee531f79ddacba90146ce89
         surfaceNormal = normal;
         lightPos = coord;
         Debug.Log("LightPos of dispersion" + lightPos);
