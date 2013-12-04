@@ -43,7 +43,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 43d0c2ab776a5b2438006f70d991249a, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -94,8 +94,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a8cb049e54a5c47aeb41066fa28547, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightType: 4
   isCreated: 0
+  isCreatedD: 0
   lightBeam: {fileID: 100000, guid: 15e21e8912e3bc44fa24fe812db95fcb, type: 2}
+  dispersedLightBeams:
+  - {fileID: 100000, guid: 8e81ce7c265b826488f25b3ae9527c8c, type: 2}
+  - {fileID: 100000, guid: 108dcf9e70fa8ff4189da14f461765b1, type: 2}
+  - {fileID: 100000, guid: fab48dc603e12314f85a45a9d4a46317, type: 2}
+  - {fileID: 100000, guid: 91a4036007e6e224b936d2188df81eb4, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
